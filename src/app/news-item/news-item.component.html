@@ -1,0 +1,18 @@
+<div class="news-item">
+    <div class="news-item__container">
+        <div class="news-item__cover">
+            <img class="news-item__cover-img" *ngIf="data.imgUrl"
+                 src="{{data.imgUrl}}" (error)="handleImageError()">
+        </div>
+        <div class="news-item__body">
+            <h3 class="news-item__title">{{data.name}}</h3>
+            <div class="news-item__date">{{data.date}}</div>
+            <p class="news-item__text">{{data.text}}</p>
+            <div class="news-item__footer">
+                <span class="news-item__author">{{data.author}}</span>
+                <button class="news-item__like-btn" (click)="toggleLike()"
+                    [ngClass]="{'news-item__like-btn_liked' : data.voteStatus}"></button>
+            </div>
+        </div>
+    </div>
+</div>

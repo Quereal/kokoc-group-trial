@@ -1,0 +1,27 @@
+.news {
+    &__container {
+        padding: 44px 25px 77px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 28px;
+        margin-bottom: 68px;
+    }
+
+    &__body {
+        display: flex;
+        gap: 37px 40px;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .news {
+        &__title {
+            font-size: 28px;
+            margin-bottom: 48px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Cокращение текста до заданного количества строк
+@mixin text-ellipsis($lines: 1) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
