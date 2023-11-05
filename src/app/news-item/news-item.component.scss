@@ -77,7 +77,7 @@
         cursor: pointer;
 
         &:not(&_liked) {
-            background-image: url('#{$like-icon}');
+            background-image: url('/assets/img/like.svg');
 
             &:hover {
                 opacity: 0.5;
@@ -85,7 +85,7 @@
         }
 
         &_liked {
-            background-image: url('#{$liked-icon}');
+            background-image: url('/assets/img/liked.svg');
 
             &:hover {
                 opacity: 0.75;
