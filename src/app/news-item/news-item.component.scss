@@ -72,9 +72,6 @@
         width: 30px;
         height: 30px;
         transition: all 0.1s ease-out;
-        border: none;
-        background-color: unset;
-        cursor: pointer;
 
         &:not(&_liked) {
             background-image: url('/assets/img/like.svg');
